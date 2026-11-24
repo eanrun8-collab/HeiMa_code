@@ -3,6 +3,7 @@ package com.hmdp.utils;
 import com.hmdp.dto.UserDTO;
 
 public class UserHolder {
+    //创建一个ThreadLocal容器存储信息
     private static final ThreadLocal<UserDTO> tl = new ThreadLocal<>();
 
     public static void saveUser(UserDTO user){
